@@ -1,0 +1,12 @@
+// 4- Remove file info.txt
+
+var fs = require('fs');
+
+fs.unlink('info.txt', function (err) {
+
+  if (err) {
+    throw err;
+  }
+
+  console.log('File (info.txt) deleted Successfully!');
+});
